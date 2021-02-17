@@ -1,12 +1,12 @@
-File downloaders are programs used for downloading ﬁles from the Internet. In this assignment you will implement two diﬀerent types of multi-process downloaders (i.e., ﬁle downloaders that comprise multiple processes):
+File downloaders are programs used for downloading ﬁles from the Internet. In this assignment you will implement a multi-process downloaders (i.e., ﬁle downloaders that comprise multiple processes):
 
-  1. a serial ﬁle downloader which downloads ﬁles one by one.
+    a serial ﬁle downloader which downloads ﬁles one by one.
 
 You will then compare the performance of the two types of downloaders. Both downloaders will use the Linux wget program in order to perform the actual downloading. The usage of the wget is simple: wget <FILE URL>. For example, running from command line the following command:
 
   wget http://releases.ubuntu.com/16.04/ubuntu-16.04.6-desktop-amd64.iso.zsync
 
-will download the Ubuntu Linux iso image to the current directory. Before proceeding with the assignment, you may want to take a moment to experiment with the wget command.
+You will download the Ubuntu Linux iso image to the current directory. Before proceeding with the assignment, you may want to take a moment to experiment with the wget command.
 In your program, the parent process shall ﬁrst read the ﬁle, urls.txt, containing the URLs of the ﬁles to be downloaded. urls.txt shall have the following format:
 
    <URL 1> <URL 2> . . . 

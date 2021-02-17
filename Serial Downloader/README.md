@@ -9,7 +9,7 @@ You will then compare the performance of the two types of downloaders. Both down
 will download the Ubuntu Linux iso image to the current directory. Before proceeding with the assignment, you may want to take a moment to experiment with the wget command.
 In your program, the parent process shall ﬁrst read the ﬁle, urls.txt, containing the URLs of the ﬁles to be downloaded. urls.txt shall have the following format:
 
-  <URL1> <URL2> . . .
+  " <URL1> <URL2> . . . "
   
 For example:
 

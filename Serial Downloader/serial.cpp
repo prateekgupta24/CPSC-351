@@ -1,18 +1,3 @@
-/*
-CPSC 351-04
-Prateek Gupta
-02-19-2021
-CWID: 888625282
-Program 2 - Serial Downloader
-1. The parent process forks oﬀ a child process.
-2. The child uses execlp("/usr/bin/wget", "wget", <URL STRING1>, NULL)
-   system call in order to replace its program with wget program that will download
-   the ﬁrst ﬁle in urls.txt (i.e. the ﬁle at URL <URL STRING1>).
-3. The parent executes a wait() system call until the child exits.
-4. The parent forks oﬀ another child process which downloads the next ﬁle speciﬁed in urls.txt.
-5. Repeat the above steps until all ﬁles are downloaded.
-*/
-
 #include <iostream>
 #include <string>
 #include <vector>
